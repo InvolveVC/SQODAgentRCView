@@ -6,32 +6,25 @@
 <title>SQOD Agent & Clinician Troubleshooting Guide — Desktop v8 (fixed)</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 <style>
-  :root{ --brand:#080A52; --pink:#F3185E; --bg:#F3F4FD; --card:#fff; }
-  body{ margin:0; background:var(--bg); font-family:'Poppins',sans-serif; color:var(--brand);
-        display:flex; justify-content:center; padding:32px 0; }.card{ position:relative; width:86%; max-width:860px; min-height:60vh; background:#fff; border-radius:20px; margin:auto; padding:28px 32px 92px; box-shadow:0 10px 32px rgba(8,10,82,0.10); display:flex; align-items:center; }.content{ max-width:740px; margin:0 auto; text-align:center; }.answer .content{ text-align:left; font-size:1.12rem; line-height:1.72; max-width:660px; }
-  h1{ font-size:1.74rem; margin:0 0 18px; font-weight:600; }.btns{ display:flex; justify-content:center; gap:16px; flex-wrap:wrap; margin-top:50px; }.btn{ background:var(--pink); color:#fff; border:none; padding:12px 18px; border-radius:10px; cursor:pointer; font-size:1rem; min-width:140px; }.logo-top{ position:absolute; top:20px; right:20px; max-width:140px; }.logo-bottom{ position:absolute; bottom:20px; left:20px; max-width:64px; opacity:0.9; }.footer-icons{ position:absolute; bottom:20px; right:20px; display:flex; gap:20px; }.icon-btn{ background:none; border:none; font-size:1.7rem; cursor:pointer; color:var(--brand); }
-  a{ color:var(--pink); text-decoration:underline; }
-  .answer-text{ max-width:660px; margin:0 auto;  text-align:left; }
-.card { min-height: 50vh; padding: 50px 32px 80px; } 
-.card.dynamic { min-height: auto; height: auto; padding: 84px 50px 120px; }
-.card.dynamic .answer-text { max-width: 860px; margin: 0 auto; line-height: 1.7; }
- .note-small{ color:var(--pink); font-style:italic; font-size:0.85rem; font-weight:400; display:block; margintop:6px; }
-.card { width: 92% !important; max-width: 500px !important; padding: 22px 24px 72px !important; }
-.content, .answer .content, .answer-text { font-size: 0.95rem !important; line-height: 1.52 !important; max-width: 92% !important; }
-h1, h2 { font-size: 1.18rem !important; font-weight: 600 !important; }
-.btn { min-width: 90px !important; padding: 12px 18px !important; }
-.card.dynamic { padding: 78px 24px 110px !important; min-height: auto !important; height: auto !important; }
-.card.dynamic .answer-text,
-.card.dynamic .content { margin-top: 0 !important; text-align: left !important; line-height: 1.6 !important; max-width: 92% !important; margin-left: auto !important; margin-right: auto !important; }
-.card.answer:not(.dynamic) .answer-text { padding-top: 48px !important; }
-.card { overflow-y: auto; }
-.note-small { margin-top: 6px !important; }
-@media (min-width: 640px) { .card.dynamic { padding-top: 84px !important; } }
-.card:not(.dynamic){display:grid!important;align-content:center;justify-items:center;padding:56px 24px!important;min-height:62vh!important}
-.card:not(.dynamic) .content{width:100%}
-.card.answer:not(.dynamic) .answer-text{margin:0 auto!important}
-.card:not(.dynamic) .btns{margin-top:28px}
-.note-small{margin-top:6px!important}
+  :root{--brand:#080A52;--pink:#F3185E;--bg:#F3F4FD;--card:#fff}
+  body{margin:0;background:var(--bg);font-family:'Poppins',sans-serif;color:var(--brand);display:flex;justify-content:center;padding:32px 0}
+  .card{position:relative;width:92%!important;max-width:500px!important;background:#fff;border-radius:20px;margin:auto;box-shadow:0 10px 32px rgba(8,10,82,.10);padding:22px 24px 72px!important;overflow-y:auto}
+  .logo-top{position:absolute;top:18px!important;right:18px!important;max-width:100px!important}
+  .logo-bottom{position:absolute;bottom:18px!important;left:18px!important;max-width:50px!important;opacity:.8!important}
+  .footer-icons{position:absolute;bottom:18px!important;right:18px!important;display:flex;gap:18px!important}
+  .icon-btn{background:none;border:none;font-size:1.5rem!important;cursor:pointer;color:var(--brand)}
+  a{color:var(--pink);text-decoration:underline}
+  h1,h2{font-size:1.18rem!important;font-weight:600!important;margin:0 0 12px}
+  .content,.answer .content,.answer-text{font-size:.95rem!important;line-height:1.52!important;max-width:92%!important;margin:0 auto}
+  .answer-text{text-align:left}
+  .btns{display:flex;justify-content:center;gap:14px!important;flex-wrap:wrap;margin-top:6px!important}
+  .btn{background:var(--pink);color:#fff;border:none;border-radius:10px;cursor:pointer;font-size:1rem;min-width:90px!important;padding:12px 18px!important}
+  .note-small{color:var(--pink);font-style:italic;font-size:.85rem;font-weight:400;display:block;margin-top:6px!important}
+  .card:not(.dynamic){min-height:37dvh!important;display:grid!important;align-content:center;justify-items:center;text-align:center}
+  .card.answer:not(.dynamic) .answer-text{display:inline-block!important;text-align:left!important}
+  .card.dynamic{min-height:auto!important;height:auto!important;padding:78px 24px 110px!important;display:flex!important;justify-content:flex-start!important;align-items:stretch!important;text-align:left!important}
+  .card.dynamic .answer-text,.card.dynamic .content{max-width:92%!important;margin:0 auto!important;text-align:left!important;line-height:1.6!important}
+  @media (min-width:640px){.card.dynamic{padding-top:84px!important}}
 </style>
 </head>
 <body>
