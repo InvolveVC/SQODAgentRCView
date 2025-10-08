@@ -27,6 +27,11 @@ h1, h2 { font-size: 1.18rem !important; font-weight: 600 !important; }
 .card { overflow-y: auto; }
 .note-small { margin-top: 6px !important; }
 @media (min-width: 640px) { .card.dynamic { padding-top: 84px !important; } }
+.card:not(.dynamic){display:grid!important;align-content:center;justify-items:center;padding:56px 24px!important;min-height:62vh!important}
+.card:not(.dynamic) .content{width:100%}
+.card.answer:not(.dynamic) .answer-text{margin:0 auto!important}
+.card:not(.dynamic) .btns{margin-top:28px}
+.note-small{margin-top:6px!important}
 </style>
 </head>
 <body>
