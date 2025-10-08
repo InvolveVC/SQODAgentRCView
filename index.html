@@ -7,27 +7,24 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 <style>
   :root{--brand:#080A52;--pink:#F3185E;--bg:#F3F4FD;--card:#fff}
-  body{margin:0;background:var(--bg);font-family:'Poppins',sans-serif;color:var(--brand);display:flex;justify-content:center;padding:32px 0}
-  .card{position:relative;width:92%!important;max-width:500px!important;background:#fff;border-radius:20px;margin:auto;box-shadow:0 10px 32px rgba(8,10,82,.10);padding:22px 24px 72px!important;overflow-y:auto}
-  .logo-top{position:absolute;top:18px!important;right:18px!important;max-width:100px!important}
-  .logo-bottom{position:absolute;bottom:18px!important;left:18px!important;max-width:50px!important;opacity:.8!important}
-  .footer-icons{position:absolute;bottom:18px!important;right:18px!important;display:flex;gap:18px!important}
-  .icon-btn{background:none;border:none;font-size:1.5rem!important;cursor:pointer;color:var(--brand)}
+  body{margin:0;background:var(--bg);font-family:'Poppins',sans-serif;color:var(--brand);display:flex;justify-content:center;padding:20px 0}
+  .card{position:relative;width:92%;max-width:500px;background:var(--card);border-radius:16px;padding:22px 24px 72px;margin:auto;box-shadow:0 6px 20px rgba(8,10,82,0.08);overflow-y:auto;display:flex;flex-direction:column}
+  .logo-top{position:absolute;top:18px;right:18px;max-width:100px}
+  .logo-bottom{position:absolute;bottom:18px;left:18px;max-width:50px;opacity:.8}
+  .footer-icons{position:absolute;bottom:18px;right:18px;display:flex;gap:18px}
+  .icon-btn{background:none;border:none;font-size:1.5rem;cursor:pointer;color:var(--brand)}
   a{color:var(--pink);text-decoration:underline}
-  h1,h2{font-size:1.18rem!important;font-weight:600!important;margin:0 0 12px}
-  .content,.answer .content,.answer-text{font-size:.95rem!important;line-height:1.52!important;max-width:92%!important;margin:0 auto}
+  h1,h2{font-size:1.18rem;font-weight:600;margin:0 0 12px}
+  .content,.answer .content,.answer-text{font-size:.95rem;line-height:1.52;max-width:92%;margin:0 auto}
   .answer-text{text-align:left}
-  .btns{display:flex;justify-content:center;gap:14px!important;flex-wrap:wrap;margin-top:6px!important}
-  .btn{background:var(--pink);color:#fff;border:none;border-radius:10px;cursor:pointer;font-size:1rem;min-width:90px!important;padding:12px 18px!important}
-  .note-small{color:var(--pink);font-style:italic;font-size:.85rem;font-weight:400;display:block;margin-top:6px!important}
-  .card:not(.dynamic){min-height:37dvh!important;display:grid!important;align-content:center;justify-items:center;text-align:center}
-  .card.answer:not(.dynamic) .answer-text{display:inline-block!important;text-align:left!important}
-  .card.dynamic{min-height:auto!important;height:auto!important;padding:78px 24px 110px!important;display:flex!important;justify-content:flex-start!important;align-items:stretch!important;text-align:left!important}
-  .card.dynamic .answer-text,.card.dynamic .content{max-width:92%!important;margin:0 auto!important;text-align:left!important;line-height:1.6!important}
-  @media (min-width:640px){.card.dynamic{padding-top:84px!important}}
-  .card:not(.dynamic){display:grid!important;align-content:center;justify-items:center;text-align:center;min-height:46dvh!important;padding:32px 24px 96px!important}
-.card.answer:not(.dynamic) .answer-text{display:inline-block!important;text-align:left!important;max-width:92%!important}
-@media(min-width:640px){.card:not(.dynamic){min-height:50dvh!important;padding:40px 24px 108px!important}}
+  .btns{display:flex;justify-content:center;align-items:center;gap:14px;flex-wrap:wrap;margin-top:6px}
+  .btn{background:var(--pink);color:#fff;border:none;padding:12px 18px;border-radius:10px;min-width:90px;cursor:pointer}
+  .note-small{color:var(--pink);font-style:italic;font-size:.85rem;font-weight:400;display:block;margin-top:6px}
+  .card.question{min-height:37dvh;justify-content:center;align-items:center;text-align:center}
+  .card.answer:not(.dynamic){min-height:37dvh;justify-content:center;align-items:center;text-align:center;padding-top:80px}
+  .card.answer:not(.dynamic) .answer-text{display:inline-block;text-align:left}
+  .card.answer.dynamic{min-height:42dvh;padding-top:70px;justify-content:center;align-items:center;text-align:center}
+  .card.answer.dynamic .answer-text{display:inline-block;text-align:left}
 </style>
 </head>
 <body>
