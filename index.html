@@ -17,6 +17,17 @@
 .card.dynamic { min-height: auto; height: auto; padding: 84px 50px 120px; }
 .card.dynamic .answer-text { max-width: 860px; margin: 0 auto; line-height: 1.7; }
  .note-small{ color:var(--pink); font-style:italic; font-size:0.85rem; font-weight:400; display:block; margintop:6px; }
+.card { width: 92% !important; max-width: 500px !important; padding: 22px 24px 72px !important; }
+.content, .answer .content, .answer-text { font-size: 0.95rem !important; line-height: 1.52 !important; max-width: 92% !important; }
+h1, h2 { font-size: 1.18rem !important; font-weight: 600 !important; }
+.btn { min-width: 90px !important; padding: 12px 18px !important; }
+.card.dynamic { padding: 78px 24px 110px !important; min-height: auto !important; height: auto !important; }
+.card.dynamic .answer-text,
+.card.dynamic .content { margin-top: 0 !important; text-align: left !important; line-height: 1.6 !important; max-width: 92% !important; margin-left: auto !important; margin-right: auto !important; }
+.card.answer:not(.dynamic) .answer-text { padding-top: 48px !important; }
+.card { overflow-y: auto; }
+.note-small { margin-top: 6px !important; }
+@media (min-width: 640px) { .card.dynamic { padding-top: 84px !important; } }
 </style>
 </head>
 <body>
