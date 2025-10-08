@@ -25,6 +25,9 @@
   .card.dynamic{min-height:auto!important;height:auto!important;padding:78px 24px 110px!important;display:flex!important;justify-content:flex-start!important;align-items:stretch!important;text-align:left!important}
   .card.dynamic .answer-text,.card.dynamic .content{max-width:92%!important;margin:0 auto!important;text-align:left!important;line-height:1.6!important}
   @media (min-width:640px){.card.dynamic{padding-top:84px!important}}
+  .card:not(.dynamic){display:grid!important;align-content:center;justify-items:center;text-align:center;min-height:46dvh!important;padding:32px 24px 96px!important}
+.card.answer:not(.dynamic) .answer-text{display:inline-block!important;text-align:left!important;max-width:92%!important}
+@media(min-width:640px){.card:not(.dynamic){min-height:50dvh!important;padding:40px 24px 108px!important}}
 </style>
 </head>
 <body>
